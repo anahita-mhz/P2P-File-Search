@@ -1,0 +1,16 @@
+I ran out code on the server and from all the data gathered I recognize these information:
+
+	1) The number of messages received in Broadcast communication is always 100, which is as expected.
+			Because all the nodes after sending 100 messages will not attempt more, but still wait to receive the termination
+			order from node 0.
+			
+	2) The number of messages received in Multicast communication is not exact but, usually around 500, which shows that
+			the random chosen nodes for sending a message is uniformly distributed.
+			
+	3) Always the number of messages received is equal to the number of messages buffered and those not buffered.
+	
+	4) The standard deviation of latencies for this amount of artificial delay is not predictable, but if we increase the
+			artificial delay so that to be much bigger than the actual propagation delay it would be a function of that.
+			
+	5) In most of the nodes the Average Letency (+/- Deviation) is around the MAXIMUM Buffer time which shows that the buffer
+			time relates to the messages causally related.

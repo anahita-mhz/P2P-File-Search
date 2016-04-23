@@ -1,0 +1,20 @@
+I wrote my code in Java. It can be easily executed from the CS-6378-Project-I directory by the following command:
+		
+		'java [-cp .] ProgramLogic.Main <NODE_ID> [options]'
+		
+	Options are:
+			--help			To show the help of the program
+			--broadcast		To execute the progarm as broadcast (the default is Multicast)
+			
+Anyone can execute the scripts on the windows through plink as follows using the scripts I added:
+
+	Multicast:
+		start plink -ssh <NET_ID>@dc30.utdallas.edu <-pw "PASSWORD" / Using Certificates> -batch <address to CS-6378-Project-I>/Scripts/Process-<i>-Multicast.sh
+	
+	Broadcast:
+		start plink -ssh <NET_ID>@dc30.utdallas.edu <-pw "PASSWORD" / Using Certificates> -batch <address to CS-6378-Project-I>/Scripts/Process-<i>-Broadcast.sh
+		
+		
+Or if you want to run on Linux platform:
+	
+	Do the same via ssh directly.
